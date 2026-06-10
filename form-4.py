@@ -277,7 +277,7 @@ def summarize(df):
 
 
 def main():
-    # Alta cúpula NVIDIA - busca por CIK do insider
+    # Alta cúpula Nvidia - busca por CIK do insider
     # df = scrape_many(
     #     ciks=[
     #         "0001197649", # Jen-Hsun Huang
@@ -355,21 +355,21 @@ def main():
     # )
 
     # Alta cúpula Synopsys - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001822289", # Sassine Ghazi
-            "0001865504", # Shelagh Glaser
-            "0001615442", # Mike Ellow
-            "0001711671", # Janet Lee
-            "0001249802", # Aart de Geus
-            "0001652437", # Sujit Kankanwadi
-            "0001206990", # John F. Jr. Runkel 
-            ],
-        company_name="snps",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001822289", # Sassine Ghazi
+    #         "0001865504", # Shelagh Glaser
+    #         "0001615442", # Mike Ellow
+    #         "0001711671", # Janet Lee
+    #         "0001249802", # Aart de Geus
+    #         "0001652437", # Sujit Kankanwadi
+    #         "0001206990", # John F. Jr. Runkel 
+    #         ],
+    #     company_name="snps",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # Alta cúpula TSMC - busca por CIK do insider
     # df = scrape_many(
@@ -487,6 +487,101 @@ def main():
     #     date_end="2026-12-31",
     #     forms=("4", "4/A"),
     # )
+
+    # Alta cúpula Constellation Energy - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001495634", # Joseph Dominguez
+    #         "0001909010", # Kathleen Barrón
+    #         "0001908991", # David O. Dardis
+    #         "0001908980", # Daniel L. Eggers
+    #         "0001824653", # Bryan Hanson
+    #         "0001910426", # Mike Koehler
+    #         "0001897905", # James McHugh
+    #         "0001697866", # Andrew Novotny
+    #         "0002103757", # Shane Smith
+    #         ],
+    #     company_name="ceg",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Vistra - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001268406", # Jim Burke
+    #         "0001690128", # Stacey Doré
+    #         "0001728553", # Scott A. Hudson
+    #         "0001940494", # Kris Moldovan
+    #         "0001703634", # Stephanie Zapata Moore
+    #         "0001711936", # Scott Helm
+    #         "0001558582", # Hilary E. Ackermann
+    #         "0001629039", # Arcilia Acosta
+    #         "0001605616", # Gavin Baiera
+    #         "0001176453", # Paul M. Barbas
+    #         "0001564675", # Lisa Crutchfield
+    #         "0001712567", # Julie Lagacy
+    #         "0002015795", # John Pitesa
+    #         "0002015795", # John Sult
+    #         "0002051447", # Rob Walters
+    #         ],
+    #     company_name="vst",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Talen - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0002028822", # Brad Berryman
+    #         "0002102527", # Edward Casulli
+    #         "0002135080", # Dan Kelly
+    #         "0002028467", # Dale Lebsack
+    #         "0001720720", # Mark McFarland
+    #         "0002028530", # Chris Morice
+    #         "0002028529", # Cole Muller
+    #         "0001707031", # Terry Nutt
+    #         "0001408305", # Darren Olagues
+    #         "0002028528", # Anthony Plagens
+    #         "0002028524", # Andy Wright
+    #         ],
+    #     company_name="tln",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Oklo - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0002021433", # Jacob Dewitte
+    #         "0002021786", # Caroline Cochran
+    #         "0001855623", # Richard Craig Bealmear 
+    #         "0002080717", # William Goodwin
+    #         ],
+    #     company_name="oklo",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula NRG - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001505252", # Robert J. Gaudette
+            "0002080459", # Brad Bentley
+            "0001940921", # Bruce Chung
+            "0001734640", # Brian Curci
+            "0002048902", # Gin Kirkland Kinney
+            "0002049789", # Dak Liyanearachchi
+            ],
+        company_name="nrg",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
 
     # Exemplo 2 (comente acima e descomente abaixo): TODOS os insiders da NVIDIA
     # df = scrape_many(
