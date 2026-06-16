@@ -338,21 +338,38 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
-    # Alta cúpula Cadence - busca por CIK do insider
+    # Alta cúpula Intel - busca por CIK do insider
     # df = scrape_many(
     #     ciks=[
-    #         "0001591933", # Anirudh Devgan
-    #         "0001847883", # Paul Cunningham
-    #         "0002031609", # Paul Scannell
-    #         "0001672685", # Marc Taxay
-    #         "0001751946", # Chin-Chi Teng
-    #         "0001718165", # John Wall
+    #         "0001008463", # Lip-Bu Tan
+    #         "0001773301", # Aparna Bawa
+    #         "0002082075", # Naga Chandrasekaran
+    #         "0002136381", # Alex Katouzian
+    #         "0001330891", # David Zinsner
     #         ],
-    #     company_name="cdns",
+    #     company_name="intc",
     #     date_start="2025-01-01",
     #     date_end="2026-12-31",
     #     forms=("4", "4/A"),
     # )
+
+    # Alta cúpula Micron - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001242654", # Sanjay Mehrotra
+            "0001632063", # April Arnzen
+            "0001689498", # Manish Bhatia
+            "0001201490", # Michael Cordano
+            "0001568238", # Scott J. DeBoer
+            "0001498287", # Mark Murphy
+            "0001311079", # Sumit Sadana
+            "0001593199", # Michael Ray
+            ],
+        company_name="mu",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
 
     # Alta cúpula Synopsys - busca por CIK do insider
     # df = scrape_many(
@@ -567,21 +584,21 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
-    # Alta cúpula NRG - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001505252", # Robert J. Gaudette
-            "0002080459", # Brad Bentley
-            "0001940921", # Bruce Chung
-            "0001734640", # Brian Curci
-            "0002048902", # Gin Kirkland Kinney
-            "0002049789", # Dak Liyanearachchi
-            ],
-        company_name="nrg",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # # Alta cúpula NRG - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001505252", # Robert J. Gaudette
+    #         "0002080459", # Brad Bentley
+    #         "0001940921", # Bruce Chung
+    #         "0001734640", # Brian Curci
+    #         "0002048902", # Gin Kirkland Kinney
+    #         "0002049789", # Dak Liyanearachchi
+    #         ],
+    #     company_name="nrg",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # Exemplo 2 (comente acima e descomente abaixo): TODOS os insiders da NVIDIA
     # df = scrape_many(
