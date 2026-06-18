@@ -371,6 +371,32 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
+    # Alta cúpula Qualcomm - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001559665", # Cristiano Amon
+            "0001610762", # Heather Ace
+            "0001888491", # Ann Chaplin
+            "0001786420", # Akash Palkhiwala
+            "0001687791", # Alex Rogers
+            "0002053888", # Baaziz Achour
+            "0001309507", # Mark McLaughlin
+            "0001829225", # Sylvia Acevedo
+            "0001191534", # Mark Fields
+            "0001324015", # Jeffrey W. Henderson
+            "0002083092", # Jeremy Kolter
+            "0001207622", # Ann M. Livermore
+            "0001290697", # Jamie S. Miller
+            "0001656326", # Marie Myers
+            "0001082930", # Irene B. Rosenfeld
+            "0001815920", # Jean-Pascal Tricoire
+            ],
+        company_name="qcom",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
+
     # Alta cúpula Cadence - busca por CIK do insider
     # df = scrape_many(
     #     ciks=[
@@ -457,20 +483,20 @@ def main():
     # )
 
     # Alta cúpula Lam Research - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001343600", # Tim Archer
-            "0001469469", # Doug Bettinger
-            "0001966598", # Neil Fernandes
-            "0001642415", # Ava Harter
-            "0001707826", # Vahid Vahedi
-            "0001707827", # Sesha Varadarajan
-            ],
-        company_name="lrcx",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001343600", # Tim Archer
+    #         "0001469469", # Doug Bettinger
+    #         "0001966598", # Neil Fernandes
+    #         "0001642415", # Ava Harter
+    #         "0001707826", # Vahid Vahedi
+    #         "0001707827", # Sesha Varadarajan
+    #         ],
+    #     company_name="lrcx",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # # Alta cúpula Netflix - busca por CIK do insider
     # df = scrape_many(
