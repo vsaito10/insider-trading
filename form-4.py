@@ -354,22 +354,38 @@ def main():
     # )
 
     # Alta cúpula Micron - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001242654", # Sanjay Mehrotra
-            "0001632063", # April Arnzen
-            "0001689498", # Manish Bhatia
-            "0001201490", # Michael Cordano
-            "0001568238", # Scott J. DeBoer
-            "0001498287", # Mark Murphy
-            "0001311079", # Sumit Sadana
-            "0001593199", # Michael Ray
-            ],
-        company_name="mu",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001242654", # Sanjay Mehrotra
+    #         "0001632063", # April Arnzen
+    #         "0001689498", # Manish Bhatia
+    #         "0001201490", # Michael Cordano
+    #         "0001568238", # Scott J. DeBoer
+    #         "0001498287", # Mark Murphy
+    #         "0001311079", # Sumit Sadana
+    #         "0001593199", # Michael Ray
+    #         ],
+    #     company_name="mu",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Cadence - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001591933", # Anirudh Devgan
+    #         "0001847883", # Paul Cunningham 
+    #         "0002031609", # Paul Scannell
+    #         "0001672685", # Marc Taxay
+    #         "0001751946", # Chin-Chi Teng
+    #         "0001718165", # John Wall
+    #         ],
+    #     company_name="cdns",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # Alta cúpula Synopsys - busca por CIK do insider
     # df = scrape_many(
@@ -423,6 +439,38 @@ def main():
     #     date_end="2026-12-31",
     #     forms=("4", "4/A"),
     # )
+
+    # Alta cúpula Applied Materials - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001183258", # Gary E. Dickerson
+    #         "0001721738", # Prabu Raja
+    #         "0001945425", # Tim Deane
+    #         "0001809022", # Brice Hill
+    #         "0001656471", # Teri Little
+    #         "0001510815", # Omkaram Nalamasu
+    #         ],
+    #     company_name="amat",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Lam Research - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001343600", # Tim Archer
+            "0001469469", # Doug Bettinger
+            "0001966598", # Neil Fernandes
+            "0001642415", # Ava Harter
+            "0001707826", # Vahid Vahedi
+            "0001707827", # Sesha Varadarajan
+            ],
+        company_name="lrcx",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
 
     # # Alta cúpula Netflix - busca por CIK do insider
     # df = scrape_many(
