@@ -372,30 +372,30 @@ def main():
     # )
 
     # Alta cúpula Qualcomm - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001559665", # Cristiano Amon
-            "0001610762", # Heather Ace
-            "0001888491", # Ann Chaplin
-            "0001786420", # Akash Palkhiwala
-            "0001687791", # Alex Rogers
-            "0002053888", # Baaziz Achour
-            "0001309507", # Mark McLaughlin
-            "0001829225", # Sylvia Acevedo
-            "0001191534", # Mark Fields
-            "0001324015", # Jeffrey W. Henderson
-            "0002083092", # Jeremy Kolter
-            "0001207622", # Ann M. Livermore
-            "0001290697", # Jamie S. Miller
-            "0001656326", # Marie Myers
-            "0001082930", # Irene B. Rosenfeld
-            "0001815920", # Jean-Pascal Tricoire
-            ],
-        company_name="qcom",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001559665", # Cristiano Amon
+    #         "0001610762", # Heather Ace
+    #         "0001888491", # Ann Chaplin
+    #         "0001786420", # Akash Palkhiwala
+    #         "0001687791", # Alex Rogers
+    #         "0002053888", # Baaziz Achour
+    #         "0001309507", # Mark McLaughlin
+    #         "0001829225", # Sylvia Acevedo
+    #         "0001191534", # Mark Fields
+    #         "0001324015", # Jeffrey W. Henderson
+    #         "0002083092", # Jeremy Kolter
+    #         "0001207622", # Ann M. Livermore
+    #         "0001290697", # Jamie S. Miller
+    #         "0001656326", # Marie Myers
+    #         "0001082930", # Irene B. Rosenfeld
+    #         "0001815920", # Jean-Pascal Tricoire
+    #         ],
+    #     company_name="qcom",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # Alta cúpula Cadence - busca por CIK do insider
     # df = scrape_many(
@@ -498,6 +498,21 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
+    # Alta cúpula KLA Corporation - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001196898", # Rick Wallace
+            "0001582049", # Bren Higgins
+            "0001642452", # Ahmad Khan
+            "0001697041", # Brian Lorig
+            "0001691769", # MaryBeth Wilkinson
+            ],
+        company_name="klac",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
+
     # # Alta cúpula Netflix - busca por CIK do insider
     # df = scrape_many(
     #     ciks=[
@@ -557,6 +572,24 @@ def main():
     #         "0001494665", # David Wadhwani
     #         ],
     #     company_name="adbe",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula Datadog - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001783990", # Olivier Pomel
+    #         "0001783984", # Alexis Lê-Quôc
+    #         "0001120741", # David Obstler
+    #         "0001861590", # Adam Blitzer
+    #         "0001783061", # Yanbing Li
+    #         "0001757760", # David Galloreese
+    #         "0001903980", # Sean Walters
+    #         "0001903975", # Kerry Acocella
+    #         ],
+    #     company_name="ddog",
     #     date_start="2025-01-01",
     #     date_end="2026-12-31",
     #     forms=("4", "4/A"),
