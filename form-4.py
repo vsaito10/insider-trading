@@ -498,20 +498,20 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
-    # Alta cúpula KLA Corporation - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001196898", # Rick Wallace
-            "0001582049", # Bren Higgins
-            "0001642452", # Ahmad Khan
-            "0001697041", # Brian Lorig
-            "0001691769", # MaryBeth Wilkinson
-            ],
-        company_name="klac",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # # Alta cúpula KLA Corporation - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001196898", # Rick Wallace
+    #         "0001582049", # Bren Higgins
+    #         "0001642452", # Ahmad Khan
+    #         "0001697041", # Brian Lorig
+    #         "0001691769", # MaryBeth Wilkinson
+    #         ],
+    #     company_name="klac",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # # Alta cúpula Netflix - busca por CIK do insider
     # df = scrape_many(
@@ -706,6 +706,42 @@ def main():
     #     date_end="2026-12-31",
     #     forms=("4", "4/A"),
     # )
+
+    # # Alta cúpula GEV - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001763642", # Scott L. Strazik
+    #         "0002005215", # Victor Abate
+    #         "0002002953", # Steven Baert
+    #         "0002108461", # Eric Gray
+    #         "0001831149", # Pablo Koziner
+    #         "0001870422", # Lola Lin
+    #         "0001551256", # Kenneth Parks
+    #         "0002101946", # Philippe Piron
+    #         ],
+    #     company_name="gev",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula BWXT - busca por CIK do insider
+    df = scrape_many(
+        ciks=[
+            "0001408482", # Rex G. Geveden
+            "0001953099", # Mike T. Fitzgerald
+            "0001554940", # Robert L. Duffy
+            "0002080894", # Gonzalo R. Cajade
+            "0002109719", # Kurt A. Bender
+            "0002096777", # Toby Smith
+            "0002114311", # John R. MacQuarrie
+            "0002076159", # Joseph K. Miller
+            ],
+        company_name="bwxt",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
 
     # Exemplo 2 (comente acima e descomente abaixo): TODOS os insiders da NVIDIA
     # df = scrape_many(
