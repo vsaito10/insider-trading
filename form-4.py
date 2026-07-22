@@ -725,19 +725,34 @@ def main():
     #     forms=("4", "4/A"),
     # )
 
-    # Alta cúpula BWXT - busca por CIK do insider
+    # # Alta cúpula BWXT - busca por CIK do insider
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001408482", # Rex G. Geveden
+    #         "0001953099", # Mike T. Fitzgerald
+    #         "0001554940", # Robert L. Duffy
+    #         "0002080894", # Gonzalo R. Cajade
+    #         "0002109719", # Kurt A. Bender
+    #         "0002096777", # Toby Smith
+    #         "0002114311", # John R. MacQuarrie
+    #         "0002076159", # Joseph K. Miller
+    #         ],
+    #     company_name="bwxt",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
+
+    # Alta cúpula BE - busca por CIK do insider
     df = scrape_many(
         ciks=[
-            "0001408482", # Rex G. Geveden
-            "0001953099", # Mike T. Fitzgerald
-            "0001554940", # Robert L. Duffy
-            "0002080894", # Gonzalo R. Cajade
-            "0002109719", # Kurt A. Bender
-            "0002096777", # Toby Smith
-            "0002114311", # John R. MacQuarrie
-            "0002076159", # Joseph K. Miller
+            "0001746277", # KR Sridhar
+            "0002023038", # Satish Chitoori
+            "0001904926", # Simon Edwards
+            "0002007932", # Aman Joshi
+            "0001591851", # Shawn Soderberg
             ],
-        company_name="bwxt",
+        company_name="be",
         date_start="2025-01-01",
         date_end="2026-12-31",
         forms=("4", "4/A"),
