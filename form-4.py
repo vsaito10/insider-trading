@@ -613,23 +613,24 @@ def main():
     # )
 
     # Alta cúpula Constellation Energy - busca por CIK do insider
-    # df = scrape_many(
-    #     ciks=[
-    #         "0001495634", # Joseph Dominguez
-    #         "0001909010", # Kathleen Barrón
-    #         "0001908991", # David O. Dardis
-    #         "0001908980", # Daniel L. Eggers
-    #         "0001824653", # Bryan Hanson
-    #         "0001910426", # Mike Koehler
-    #         "0001897905", # James McHugh
-    #         "0001697866", # Andrew Novotny
-    #         "0002103757", # Shane Smith
-    #         ],
-    #     company_name="ceg",
-    #     date_start="2025-01-01",
-    #     date_end="2026-12-31",
-    #     forms=("4", "4/A"),
-    # )
+    df = scrape_many(
+        ciks=[
+            "0001495634", # Joseph Dominguez
+            "0001909010", # Kathleen Barrón
+            "0001908991", # David O. Dardis
+            "0001908980", # Daniel L. Eggers
+            "0001824653", # Bryan Hanson
+            "0001910426", # Mike Koehler
+            "0001897905", # James McHugh
+            "0001697866", # Andrew Novotny
+            "0002103757", # Shane Smith
+            "0001194961", # Roger W. Crandall
+            ],
+        company_name="ceg",
+        date_start="2025-01-01",
+        date_end="2026-12-31",
+        forms=("4", "4/A"),
+    )
 
     # Alta cúpula Vistra - busca por CIK do insider
     # df = scrape_many(
@@ -744,19 +745,19 @@ def main():
     # )
 
     # Alta cúpula BE - busca por CIK do insider
-    df = scrape_many(
-        ciks=[
-            "0001746277", # KR Sridhar
-            "0002023038", # Satish Chitoori
-            "0001904926", # Simon Edwards
-            "0002007932", # Aman Joshi
-            "0001591851", # Shawn Soderberg
-            ],
-        company_name="be",
-        date_start="2025-01-01",
-        date_end="2026-12-31",
-        forms=("4", "4/A"),
-    )
+    # df = scrape_many(
+    #     ciks=[
+    #         "0001746277", # KR Sridhar
+    #         "0002023038", # Satish Chitoori
+    #         "0001904926", # Simon Edwards
+    #         "0002007932", # Aman Joshi
+    #         "0001591851", # Shawn Soderberg
+    #         ],
+    #     company_name="be",
+    #     date_start="2025-01-01",
+    #     date_end="2026-12-31",
+    #     forms=("4", "4/A"),
+    # )
 
     # Exemplo 2 (comente acima e descomente abaixo): TODOS os insiders da NVIDIA
     # df = scrape_many(
